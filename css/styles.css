@@ -10,9 +10,14 @@ header {
     padding: 1em 0;
 }
 
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0; /* Resets margin for all elements */
+    padding: 0; /* Resets padding for all elements */
+  }
+
 nav {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0;
 }
 
 nav a {
