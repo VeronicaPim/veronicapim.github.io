@@ -16,4 +16,34 @@ nav a {
     text-align: center;
 }
 
+.profile-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .profile-photo {
+    width: 150px; /* Adjust as needed */
+    border-radius: 50%; /* Creates a circular photo */
+    margin-bottom: 20px;
+  }
+  
+  .profile-section h2 {
+    margin: 10px 0;
+  }
+  
+  .location {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-links .icon {
+    width: 24px; /* Adjust based on your icon size */
+    height: 24px;
+  }
+
 /* Add more styles here for layout, typography, and responsive design */
