@@ -3,103 +3,89 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333; /* Dark grey text for body */
+    color: #333; /* Dark grey text */
 }
 
 header {
     background-color: #f8f8f8;
-    padding: 10px 0;
-    border-bottom: 1px solid #eaeaea;
+    padding: 0.5em 0;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1em;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
-    padding: 0.5em 1em;
-    transition: color 0.3s;
-}
-
-nav a.active, nav a:hover {
     color: #0056b3;
-    text-decoration: underline;
+    padding: 0.5em 1em;
 }
 
-nav a:focus {
-    background-color: #eaeaea; /* Light grey background to indicate focus */
-    outline: none;
-    text-decoration: none;
+nav a.active {
+    color: #d30707; /* Red for active link */
+    text-decoration: none; /* No underline */
 }
 
 .profile-photo {
-    width: 200px;
+    width: 150px; /* Adjust for your image */
     border-radius: 50%;
-    margin-bottom: 1em;
-    display: block; /* Ensures the image is block level to center it in the sidebar */
-    margin-left: auto; /* Centers the image horizontally */
-    margin-right: auto;
+    margin: 1em auto; /* Center the image */
 }
 
-.main {
+.main-flex-container {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    padding: 1em;
+    gap: 1em;
+}
+
+.left-column {
+    /* Adjust width as necessary, make sure it's responsive */
+    width: 20%;
 }
 
 .cv-content {
-    flex: 3;
-    padding-right: 20px;
-}
-
-.sidebar {
-    flex: 1;
-    padding-left: 20px;
-    text-align: center;
+    /* Adjust width as necessary, make sure it's responsive */
+    width: 75%;
 }
 
 footer {
     background-color: #f8f8f8;
-    padding: 10px 0;
-    border-top: 1px solid #eaeaea;
+    padding: 1em 0;
     text-align: center;
     font-size: 0.875em;
 }
 
 .download-cv {
-    display: block; /* Makes it a block level element to fill width */
-    background-color: #4CAF50; /* Button color */
+    background-color: #4CAF50; /* Green */
     color: white;
-    text-decoration: none;
     padding: 10px 20px;
-    margin: 10px 0;
+    text-align: center;
+    display: block;
+    width: max-content;
+    margin: 1em auto; /* Center the button */
+    text-decoration: none;
     border-radius: 5px;
-    text-align: center; /* Centers text in the button */
-    max-width: 200px; /* Sets a max width for the button */
-    margin-left: auto; /* Centers the button horizontally */
-    margin-right: auto;
 }
 
 .download-cv:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Darker green */
 }
 
 @media (max-width: 768px) {
-    .main {
+    .main-flex-container {
         flex-direction: column;
     }
 
-    .left-column, .right-column {
-        max-width: 100%;
-        text-align: center;
+    .left-column, .cv-content {
+        width: 100%;
+        margin-bottom: 1em;
     }
 
     nav {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
 }
