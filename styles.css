@@ -1,49 +1,83 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-    background: #fff; /* Replace with your header color */
+    background-color: #f8f8f8; /* Adjust header background as needed */
+    padding: 1em 0;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 nav a {
     text-decoration: none;
-    color: #000; /* Replace with your link color */
-    padding: 0 10px;
-}
-
-.welcome-section {
-    text-align: center;
+    color: #333; /* Adjust link color as needed */
+    padding: 0 1em;
+    font-weight: 700; /* Makes the text bold */
 }
 
 .profile-section {
     text-align: center;
-    margin-top: 20px;
-  }
-  
-  .profile-photo {
-    width: 150px; /* Adjust as needed */
-    border-radius: 50%; /* Creates a circular photo */
-    margin-bottom: 20px;
-  }
-  
-  .profile-section h2 {
-    margin: 10px 0;
-  }
-  
-  .location {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  .social-links a {
-    margin: 0 10px;
-    display: inline-block;
-  }
-  
-  .social-links .icon {
-    width: 24px; /* Adjust based on your icon size */
-    height: 24px;
-  }
+    margin-top: 2em;
+}
 
-/* Add more styles here for layout, typography, and responsive design */
+.profile-photo {
+    width: 200px; /* Adjust as needed */
+    border-radius: 50%; /* Creates a circular photo */
+    margin-bottom: 1em;
+}
+
+.profile-section h2 {
+    margin: 0.5em 0;
+}
+
+.location {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.social-links {
+    margin-bottom: 2em;
+}
+
+.social-links a.icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 24px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+/* Style for the main welcome section */
+#welcome {
+    text-align: left;
+    padding: 1em;
+    max-width: 800px; /* Adjust as needed for your layout */
+    margin: auto;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+    .profile-section, #welcome {
+        text-align: center;
+    }
+
+    #welcome {
+        padding: 1em 0.5em;
+    }
+}
+
+/* Style your footer here */
+footer {
+    background-color: #f8f8f8; /* Adjust footer background as needed */
+    padding: 1em 0;
+    text-align: center;
+}
