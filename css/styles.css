@@ -30,6 +30,12 @@ nav a.active, nav a:hover {
     text-decoration: underline;
 }
 
+nav a:focus {
+    background-color: #eaeaea; /* Light grey background to indicate focus */
+    outline: none;
+    text-decoration: none;
+}
+
 .profile-photo {
     width: 200px;
     border-radius: 50%;
