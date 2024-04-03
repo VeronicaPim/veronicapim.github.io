@@ -22,10 +22,6 @@ nav a {
     font-weight: 700; /* Makes the text bold */
 }
 
-.profile-section {
-    text-align: center;
-    margin-top: 2em;
-}
 
 .profile-photo {
     width: 200px; /* Adjust as needed */
@@ -56,24 +52,6 @@ nav a {
     height: auto;
 }
 
-/* Style for the main welcome section */
-#welcome {
-    text-align: left;
-    padding: 1em;
-    max-width: 800px; /* Adjust as needed for your layout */
-    margin: auto;
-}
-
-/* Add responsive design */
-@media (max-width: 768px) {
-    .profile-section, #welcome {
-        text-align: center;
-    }
-
-    #welcome {
-        padding: 1em 0.5em;
-    }
-}
 
 /* Style your footer here */
 footer {
@@ -81,3 +59,41 @@ footer {
     padding: 1em 0;
     text-align: center;
 }
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .profile-section {
+    flex: 1;
+    max-width: 300px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #welcome {
+    flex: 3;
+    margin-top: 20px;
+    max-width: calc(100% - 320px); /* Adjust based on the profile-section width */
+    text-align: left;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-section, #welcome {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    #welcome {
+      margin-top: 10px;
+    }
+  }
