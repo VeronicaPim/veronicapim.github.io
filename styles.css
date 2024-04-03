@@ -1,0 +1,19 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: #fff; /* Replace with your header color */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000; /* Replace with your link color */
+    padding: 0 10px;
+}
+
+.welcome-section {
+    text-align: center;
+}
+
+/* Add more styles here for layout, typography, and responsive design */
