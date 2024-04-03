@@ -9,18 +9,23 @@ body {
 header {
     background-color: #f8f8f8;
     padding: 0.5em 0;
+    border-bottom: 1px solid #eaeaea;
 }
 
 nav {
     display: flex;
-    justify-content: center;
-    gap: 1em;
+    justify-content: center; /* Centers the nav links */
+    align-items: center; /* Centers the nav links vertically */
+    flex-wrap: wrap; /* Wraps the nav links to the next line on small screens */
+    gap: 20px; /* Spaces out the nav links */
+    text-decoration: none;
 }
 
 nav a {
     text-decoration: none;
     color: #0056b3;
-    padding: 0.5em 1em;
+    padding: 0.5em 1em; /* Padding around the links for clickability */
+    transition: color 0.3s ease;
 }
 
 nav a:active, nav a:focus {
@@ -28,10 +33,109 @@ nav a:active, nav a:focus {
     text-decoration: none; /* Ensures no underline appears */
 }
 
+nav a:hover {
+    color: #1a0dab; /* Color changes on hover */
+}
+
 .profile-photo {
     width: 150px; /* Adjust for your image */
     border-radius: 50%;
     margin: 1em auto; /* Center the image */
+}
+
+.profile-section h2 {
+    margin: 0.5em 0;
+}
+
+.location {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.social-links {
+    margin-bottom: 2em;
+}
+
+.social-links a.icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 0 0 250px;
+}
+
+.right-column {
+    flex: 1;
+    max-width: 800px;
+    text-align: left;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+    font-size: 0.875em; /* Adjust font size as needed */
+}
+
+footer a {
+    color: #1a0dab; /* Hyperlink color */
+    text-decoration: none; /* Removes underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+  
+    .left-column, .right-column {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+nav a, #welcome a {
+    text-decoration: none; /* Removes underline from all links in nav and welcome section */
+    color: #1a0dab; /* This is the default blue color for hyperlinks; change as needed */
+}
+
+nav a:hover, #welcome a:hover {
+    text-decoration: underline; /* Adds underline on hover for better user experience */
+    color: #551a8b; /* Darker purple color on hover; change as needed */
+}
+
+nav a:active, nav a:focus {
+    outline: none;
+    border-bottom: 2px solid #333; /* Adds an underline effect on active/focus */
+}
+/* Styles for active navigation link - if needed */
+nav a.active {
+    color: #d30707; /* Red color for the active link; change as needed */
+    text-decoration: underline; /* Underline for active link */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
 }
 
 .main-flex-container {
