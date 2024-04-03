@@ -6,20 +6,29 @@ body {
 }
 
 header {
-    background-color: #f8f8f8;
-    padding: 1em 0;
+    background-color: #f8f8f8; /* Light grey background */
+    padding: 10px 0; /* Reduced vertical padding */
+    border-bottom: 1px solid #eaeaea; /* Light border at the bottom */
 }
 
 nav {
-    text-align: center;
-    margin-bottom: 0;
+    display: flex;
+    justify-content: center; /* Centers the nav links */
+    align-items: center; /* Centers the nav links vertically */
+    flex-wrap: wrap; /* Wraps the nav links to the next line on small screens */
+    gap: 20px; /* Spaces out the nav links */
+    text-decoration: none;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
-    padding: 0 1em;
-    font-weight: 700;
+    color: #333; /* Dark grey text */
+    padding: 0.5em 1em; /* Padding around the links for clickability */
+    transition: color 0.3s ease; /* Smooth color transition for hover effect */
+}
+
+nav a:hover {
+    color: #1a0dab; /* Color changes on hover */
 }
 
 .profile-photo {
@@ -71,8 +80,19 @@ nav a {
 
 footer {
     background-color: #f8f8f8;
-    padding: 1em 0;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
     text-align: center;
+    font-size: 0.875em; /* Adjust font size as needed */
+}
+
+footer a {
+    color: #1a0dab; /* Hyperlink color */
+    text-decoration: none; /* Removes underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adds underline on hover */
 }
 
 @media (max-width: 768px) {
@@ -96,6 +116,10 @@ nav a:hover, #welcome a:hover {
     color: #551a8b; /* Darker purple color on hover; change as needed */
 }
 
+nav a:active, nav a:focus {
+    outline: none;
+    border-bottom: 2px solid #333; /* Adds an underline effect on active/focus */
+}
 /* Styles for active navigation link - if needed */
 nav a.active {
     color: #d30707; /* Red color for the active link; change as needed */
