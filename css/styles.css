@@ -23,9 +23,9 @@ nav a {
     padding: 0.5em 1em;
 }
 
-nav a.active {
-    color: #d30707; /* Red for active link */
-    text-decoration: none; /* No underline */
+nav a:active, nav a:focus {
+    outline: none;
+    text-decoration: none; /* Ensures no underline appears */
 }
 
 .profile-photo {
