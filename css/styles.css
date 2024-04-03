@@ -124,4 +124,21 @@ nav a:active, nav a:focus {
 nav a.active {
     color: #d30707; /* Red color for the active link; change as needed */
     text-decoration: underline; /* Underline for active link */
+    color: #1a0dab; /* Adjust to your active link color */
+    border-bottom: 2px solid #1a0dab; /* Active link underline */
+}
+
+.download-cv {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-decoration: none; /* No underline */
+    padding: 10px 20px; /* Padding for the button */
+    margin: 10px 0; /* Margin for spacing */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition for the button */
+}
+
+.download-cv:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
