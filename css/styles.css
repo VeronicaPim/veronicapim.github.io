@@ -6,14 +6,9 @@ body {
 }
 
 header {
-    background-color: #f8f8f8; 
+    background-color: #f8f8f8;
     padding: 1em 0;
 }
-
-body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
-    margin: 0; /* Resets margin for all elements */
-    padding: 0; /* Resets padding for all elements */
-  }
 
 nav {
     text-align: center;
@@ -22,15 +17,14 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333; /* Adjust link color as needed */
+    color: #333;
     padding: 0 1em;
-    font-weight: 700; /* Makes the text bold */
+    font-weight: 700;
 }
 
-
 .profile-photo {
-    width: 200px; /* Adjust as needed */
-    border-radius: 50%; /* Creates a circular photo */
+    width: 200px;
+    border-radius: 50%;
     margin-bottom: 1em;
 }
 
@@ -53,63 +47,41 @@ nav a {
 }
 
 .social-links img {
-    width: 24px; /* Adjust icon size as needed */
+    width: 24px;
     height: auto;
-}
-
-.main-flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px; /* Adjust the gap between columns as needed */
-    padding: 20px; /* Add padding as needed */
-  }
-
-  .left-column {
-    flex: 0 0 250px; /* Replace with the width you want for the profile section */
-  }
-  
-  .right-column {
-    flex: 1; /* This allows the right column to grow and fill the remaining space */
-    max-width: 800px; /* Set a max-width for the content if needed */
-  }
-
-/* Style your footer here */
-footer {
-    background-color: #f8f8f8; /* Adjust footer background as needed */
-    padding: 1em 0;
-    text-align: center;
 }
 
 .main-content {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .profile-section {
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 0 0 250px;
+}
+
+.right-column {
     flex: 1;
-    max-width: 300px;
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  #welcome {
-    flex: 3;
-    margin-top: 20px;
-    max-width: calc(100% - 320px); /* Adjust based on the profile-section width */
+    max-width: 800px;
     text-align: left;
-  }
-  
-/* Responsive design */
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 1em 0;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
-  .main-flex-container {
-    flex-direction: column;
-  }
+    .main-content {
+        flex-direction: column;
+    }
   
-  .left-column, .right-column {
-    flex: 1;
-    max-width: 100%;
-  }
+    .left-column, .right-column {
+        max-width: 100%;
+        text-align: center;
+    }
 }
