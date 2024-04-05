@@ -184,3 +184,25 @@ footer {
         align-items: center;
     }
 }
+
+.latest-news {
+    margin-top: 2em;
+}
+
+.latest-news h2 {
+    margin-bottom: 1em;
+    color: #333; /* Dark grey text */
+}
+
+.latest-news ul {
+    list-style-type: none; /* Removes the default list styling */
+    padding-left: 0; /* Aligns the list with the rest of the content */
+}
+
+.latest-news li {
+    margin-bottom: 0.5em;
+}
+
+.latest-news li strong {
+    color: #0056b3; /* Highlight the date */
+}
