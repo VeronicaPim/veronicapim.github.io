@@ -139,11 +139,6 @@ nav a.active {
     width: 20%;
 }
 
-.cv-content {
-    /* Adjust width as necessary, make sure it's responsive */
-    width: 75%;
-}
-
 .download-cv {
     background-color: #4CAF50; /* Green */
     color: white;
