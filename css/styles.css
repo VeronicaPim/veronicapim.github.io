@@ -99,15 +99,6 @@ footer {
     font-size: 0.875em; /* Adjust font size as needed */
 }
 
-footer a {
-    color: #1a0dab; /* Hyperlink color */
-    text-decoration: none; /* Removes underline */
-}
-
-footer a:hover {
-    text-decoration: underline; /* Adds underline on hover */
-}
-
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
@@ -151,13 +142,6 @@ nav a.active {
 .cv-content {
     /* Adjust width as necessary, make sure it's responsive */
     width: 75%;
-}
-
-footer {
-    background-color: #f8f8f8;
-    padding: 1em 0;
-    text-align: center;
-    font-size: 0.875em;
 }
 
 .download-cv {
