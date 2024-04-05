@@ -92,11 +92,11 @@ nav a:hover {
 }
 
 footer {
-    background-color: #f8f8f8;
-    /* padding: 10px 0;
-    border-top: 1px solid #eaeaea; */
+    flex-shrink: 0;
+    background-color: #333;
+    color: white;
     text-align: center;
-    font-size: 0.875em; /* Adjust font size as needed */
+    padding: 10px 0;
 }
 
 @media (max-width: 768px) {
