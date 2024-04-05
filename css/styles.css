@@ -4,12 +4,19 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: #333; /* Dark grey text */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content */
+    min-height: 100vh; /* Full viewport height */
 }
 
 header {
     background-color: #f8f8f8;
     padding: 0.5em 0;
     border-bottom: 1px solid #eaeaea;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 nav {
@@ -205,4 +212,24 @@ footer {
 
 .latest-news li strong {
     color: #0056b3; /* Highlight the date */
+}
+
+.news-section {
+    width: 100%;
+    background-color: #f9f9f9; /* Light background for news section */
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow for depth */
+}
+
+.news-item {
+    background-color: white; /* White background for each item */
+    margin-bottom: 10px; /* Space between news items */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for polish */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow for each item */
+}
+
+.news-item:last-child {
+    margin-bottom: 0; /* No margin for the last item */
 }
