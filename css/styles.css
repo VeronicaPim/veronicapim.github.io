@@ -91,6 +91,11 @@ nav a:hover {
     text-align: left;
 }
 
+h1, h2, h3 {
+    color: #333;
+    margin: 0.5em 0;
+}
+
 footer {
     background-color: #f8f8f8;
     padding: 10px 0;
