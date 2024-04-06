@@ -140,13 +140,10 @@ nav a.active {
 .download-cv {
     background-color: #4CAF50; /* Green */
     color: white;
-    padding: 10px 20px;
     text-align: center;
     display: block;
-    width: max-content;
     margin: 1em auto; /* Center the button */
     text-decoration: none;
-    border-radius: 5px;
 }
 
 .download-cv:hover {
