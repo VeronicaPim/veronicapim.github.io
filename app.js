@@ -8,6 +8,7 @@ function updateActiveNav() {
       link.classList.remove('active');
     });
     
+    
     // Add 'active' class to 'Projects' link
     // Assuming 'Projects' link contains the text 'Projects'
     const projectsLink = [...navLinks].find(link => link.textContent === 'Projects');
