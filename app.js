@@ -2,7 +2,6 @@
 function updateActiveNav() {
     // Select all navigation links
     const navLinks = document.querySelectorAll('nav a');
-
     
     // Iterate over the links to remove 'active' class
     navLinks.forEach(link => {
