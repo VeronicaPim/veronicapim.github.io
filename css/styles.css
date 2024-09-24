@@ -21,6 +21,8 @@ main {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center text */
 }
 
 /* Header styling */
@@ -46,18 +48,6 @@ nav a {
     transition: color 0.3s ease;
 }
 
-/* Main content centering */
-.main-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1000px; /* Set a max width for content */
-    margin: 0 auto; /* Center the content */
-}
-
 /* Center the project sections */
 h2, h3, p {
     text-align: center;
@@ -73,7 +63,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .main-content {
+    main {
         padding: 10px;
     }
 
