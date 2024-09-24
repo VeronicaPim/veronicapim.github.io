@@ -3,10 +3,9 @@ body {
     margin: 0;
     padding: 0;
     color: #333; /* Dark grey text */
-
+    
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers content */
     min-height: 100vh; /* Full viewport height */
 }
 
@@ -68,6 +67,7 @@ nav a {
     align-items: flex-start;
     gap: 30px;
     padding: 20px;
+    flex: 1; /* Takes up remaining space */
 }
 
 .left-column {
@@ -86,6 +86,8 @@ footer {
     background-color: #f8f8f8;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
 }
 
 @media (max-width: 768px) {
