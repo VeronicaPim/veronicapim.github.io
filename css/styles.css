@@ -11,6 +11,10 @@ body {
     min-height: 100vh; /* Full viewport height */
 }
 
+main {
+    flex: 1; /* Makes main content take up all available space, pushing footer to the bottom */
+}
+
 header {
     width: 100%;
     background-color: #f8f8f8;
