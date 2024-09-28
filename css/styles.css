@@ -38,6 +38,11 @@ nav a {
     transition: color 0.3s ease;
 }
 
+.small-image {
+    width: 300px;
+    height: auto;
+}
+
 .profile-photo {
     width: 150px; /* Adjust for your image */
     border-radius: 50%;
