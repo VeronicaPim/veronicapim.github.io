@@ -207,7 +207,7 @@ nav a, #welcome a {
     margin-bottom: 0; /* No margin for the last item */
 }
 
-/* Styling the About Me section */
+/* Styling the About Me container */
 .about-me {
     max-width: 800px;
     margin: 40px auto;
@@ -216,6 +216,48 @@ nav a, #welcome a {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Identity titles styling */
+.identity-title {
+    font-size: 1.5rem; /* Larger size for emphasis */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between title and description */
+    color: #333; /* Darker color for better contrast */
+    display: block;
+}
+
+/* Styling descriptions */
+.identity-list p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Styling for images */
+.identity-image {
+    max-width: 70%; /* Restricts image size to 70% of container width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures image is centered */
+    margin: 10px auto; /* Centers the image with space around */
+    border-radius: 8px; /* Rounded corners for a clean look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+/* Styling for figure captions */
+figcaption {
+    text-align: center;
+    font-size: 0.9rem; /* Slightly smaller font for captions */
+    color: #666; /* Lighter color for distinction */
+    margin-top: 5px; /* Space between image and caption */
+    font-style: italic; /* Optional: Italicize the caption */
+}
+
+/* General spacing between identity blocks */
+.identity-list li {
+    margin-bottom: 40px; /* Space between identity sections */
+}
+
 
 .about-me h1 {
     font-size: 2rem; /* Adjust font size for the heading */
@@ -235,41 +277,5 @@ nav a, #welcome a {
     font-size: 1.2rem; /* Slightly larger font */
     font-weight: bold; /* Make it more prominent */
     margin-bottom: 20px; /* Add spacing before the next paragraph */
-}
-
-/* Styling for identity titles */
-.identity-title {
-    font-size: 1.5rem; /* Make the identity title larger */
-    margin-bottom: 10px; /* Add space below the title */
-    color: #333; /* Darker color for better emphasis */
-    display: block; /* Ensures titles are on their own line */
-}
-
-/* Styling for identity descriptions */
-.identity-list p {
-    font-size: 1rem; /* Normal size for descriptions */
-    line-height: 1.6;
-    margin-bottom: 15px; /* Space between description and image */
-    color: #555; /* Lighter color to make the title stand out more */
-}
-
-/* Styling for images */
-.identity-image {
-    max-width: 80%; /* Restrict image size to 80% of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Adds rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 15px 0 30px; /* Space around images: top, sides, bottom */
-    display: block; /* Ensure images behave as block elements */
-}
-
-/* Styling the list container */
-.identity-list {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove padding */
-}
-
-.identity-list li {
-    margin-bottom: 40px; /* Add space between each identity block */
 }
 
