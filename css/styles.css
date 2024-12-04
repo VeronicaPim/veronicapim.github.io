@@ -209,12 +209,12 @@ nav a, #welcome a {
 
 /* About Me Page Styling */
 .about-me {
-    max-width: 800px; /* Limit the width */
-    margin: 0 auto;   /* Center horizontally */
-    padding: 20px;    /* Add padding around the content */
-    text-align: left; /* Align text to the left */
-    background-color: #ffffff; /* White background */
-    border-radius: 8px; /* Rounded corners */
+    max-width: 800px;
+    margin: 40px auto; /* Adds 40px margin on top and centers horizontally */
+    padding: 20px; /* Internal spacing inside the box */
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
