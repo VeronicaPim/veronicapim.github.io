@@ -206,3 +206,27 @@ nav a, #welcome a {
 .news-item:last-child {
     margin-bottom: 0; /* No margin for the last item */
 }
+
+/* About Me Page Styling */
+.about-me {
+    max-width: 800px; /* Limit the width */
+    margin: 0 auto;   /* Center horizontally */
+    padding: 20px;    /* Add padding around the content */
+    text-align: left; /* Align text to the left */
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-me h1 {
+    font-size: 2rem; /* Adjust font size for the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #333; /* Dark grey color */
+}
+
+.about-me p {
+    font-size: 1.2rem; /* Larger font size for readability */
+    line-height: 1.6; /* Increase line spacing */
+    margin-bottom: 15px; /* Space between paragraphs */
+    color: #555; /* Slightly lighter grey for text */
+}
