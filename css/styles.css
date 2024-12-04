@@ -230,3 +230,11 @@ nav a, #welcome a {
     margin-bottom: 15px; /* Space between paragraphs */
     color: #555; /* Slightly lighter grey for text */
 }
+
+/* Styling for the About Me intro text */
+.about-me p:first-of-type {
+    font-size: 1.2rem; /* Slightly larger font */
+    font-weight: bold; /* Make it more prominent */
+    margin-bottom: 20px; /* Add spacing before the next paragraph */
+}
+
