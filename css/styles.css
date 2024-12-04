@@ -279,3 +279,12 @@ figcaption {
     margin-bottom: 20px; /* Add spacing before the next paragraph */
 }
 
+blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555; /* Lighter text for subtlety */
+    border-left: 4px solid #ccc; /* Adds a decorative left border */
+    margin: 20px 0; /* Spacing around the quote */
+    padding-left: 15px; /* Indentation for the text */
+}
+
