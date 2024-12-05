@@ -4,6 +4,7 @@ body {
     padding: 0;
     color: #333; /* Dark grey text */
 
+    
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers content */
@@ -12,12 +13,6 @@ body {
 
 main {
     flex: 1; /* Makes main content take up all available space, pushing footer to the bottom */
-    max-width: 800px; /* Restrict width for readability */
-    margin: 40px auto; /* Center content with spacing */
-    padding: 20px; /* Add spacing around the content */
-    background-color: #ffffff; /* White background for contrast */
-    border-radius: 8px; /* Rounded corners for a polished look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 header {
@@ -33,6 +28,7 @@ nav {
     align-items: center; /* Centers the nav links vertically */
     flex-wrap: wrap; /* Wraps the nav links to the next line on small screens */
     gap: 20px; /* Spaces out the nav links */
+    text-decoration: none;
 }
 
 nav a {
@@ -42,8 +38,56 @@ nav a {
     transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #003d80; /* Darker blue on hover */
+.small-image {
+    width: 50px;
+    height: auto;
+}
+
+.profile-photo {
+    width: 150px; /* Adjust for your image */
+    border-radius: 50%;
+    margin: 1em auto; /* Center the image */
+}
+
+.profile-section h2 {
+    margin: 0.5em 0;
+}
+
+.location {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.social-links {
+    margin-bottom: 2em;
+}
+
+.social-links a.icon {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.social-links img {
+    width: 24px;
+    height: auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 0 0 250px;
+}
+
+.right-column {
+    flex: 1;
+    max-width: 800px;
+    text-align: left;
 }
 
 footer {
@@ -54,68 +98,192 @@ footer {
     padding: 10px 0;
     position: relative;
     bottom: 0;
-    border-top: 1px solid #eaeaea;
-    color: #555; /* Slightly lighter text color */
+}
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+  
+    .left-column, .right-column {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+nav a, #welcome a {
+    text-decoration: none; /* Removes underline from all links in nav and welcome section */
+    color: #1a0dab; /* This is the default blue color for hyperlinks; change as needed */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.main-flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.left-column {
+    /* Adjust width as necessary, make sure it's responsive */
+    width: 20%;
+}
+
+.download-cv {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    width: max-content;
+    margin: 1em auto; /* Center the button */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-cv:hover {
+    background-color: #45a049; /* Darker green */
 }
 
 @media (max-width: 768px) {
+    .main-flex-container {
+        flex-direction: column;
+    }
+
+    .left-column, .cv-content {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
     nav {
         flex-direction: column;
         align-items: center;
     }
-
-    main {
-        padding: 15px;
-    }
 }
 
-/* Projects Page Specific Styles */
-main h2 {
-    font-size: 1.8rem; /* Larger size for section headings */
-    color: #333; /* Dark grey for contrast */
-    margin-bottom: 20px;
-    text-align: center;
+.latest-news {
+    margin-top: 2em;
 }
 
-main h3 {
-    font-size: 1.4rem; /* Medium size for project titles */
-    color: #0056b3; /* Blue for titles to match links */
-    margin-bottom: 10px;
+.latest-news h2 {
+    margin-bottom: 1em;
+    color: #333; /* Dark grey text */
 }
 
-main p {
-    font-size: 1rem; /* Default paragraph size */
-    line-height: 1.6; /* Line spacing for readability */
-    color: #555; /* Lighter grey for contrast with headings */
+.latest-news ul {
+    list-style-type: none; /* Removes the default list styling */
+    padding-left: 0; /* Aligns the list with the rest of the content */
+}
+
+.latest-news li {
+    margin-bottom: 0.5em;
+}
+
+.latest-news li strong {
+    color: #0056b3; /* Highlight the date */
+}
+
+.news-section {
+    width: 100%;
+    background-color: #f9f9f9; /* Light background for news section */
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow for depth */
+}
+
+.news-item {
+    background-color: white; /* White background for each item */
+    margin-bottom: 10px; /* Space between news items */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for polish */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow for each item */
+}
+
+.news-item:last-child {
+    margin-bottom: 0; /* No margin for the last item */
+}
+
+/* Styling the About Me container */
+.about-me {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Identity titles styling */
+.identity-title {
+    font-size: 1.5rem; /* Larger size for emphasis */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between title and description */
+    color: #333; /* Darker color for better contrast */
+    display: block;
+}
+
+/* Styling descriptions */
+.identity-list p {
+    font-size: 1rem;
+    line-height: 1.6;
     margin-bottom: 15px;
+    color: #555;
 }
 
-main a {
-    color: #0056b3; /* Blue for links */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease;
+/* Styling for images */
+.identity-image {
+    max-width: 70%; /* Restricts image size to 70% of container width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures image is centered */
+    margin: 10px auto; /* Centers the image with space around */
+    border-radius: 8px; /* Rounded corners for a clean look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
 }
 
-main a:hover {
-    color: #003d80; /* Darker shade on hover */
+/* Styling for figure captions */
+figcaption {
+    text-align: center;
+    font-size: 0.9rem; /* Slightly smaller font for captions */
+    color: #666; /* Lighter color for distinction */
+    margin-top: 5px; /* Space between image and caption */
+    font-style: italic; /* Optional: Italicize the caption */
 }
 
-/* Optional: Add spacing between sections */
-main h3 + p {
-    margin-bottom: 20px; /* Add space between project title and description */
+/* General spacing between identity blocks */
+.identity-list li {
+    margin-bottom: 40px; /* Space between identity sections */
 }
 
-/* Responsive Adjustments for Projects Page */
-@media (max-width: 768px) {
-    main h2 {
-        font-size: 1.5rem; /* Slightly smaller on small screens */
-    }
 
-    main h3 {
-        font-size: 1.2rem; /* Slightly smaller project titles */
-    }
+.about-me h1 {
+    font-size: 2rem; /* Adjust font size for the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #333; /* Dark grey color */
+}
 
-    main p {
-        font-size: 0.9rem; /* Slightly smaller paragraphs */
-    }
+.about-me p {
+    font-size: 1.2rem; /* Larger font size for readability */
+    line-height: 1.6; /* Increase line spacing */
+    margin-bottom: 15px; /* Space between paragraphs */
+    color: #555; /* Slightly lighter grey for text */
+}
+
+/* Styling for the About Me intro text */
+.about-me p:first-of-type {
+    font-size: 1.2rem; /* Slightly larger font */
+    font-weight: bold; /* Make it more prominent */
+    margin-bottom: 20px; /* Add spacing before the next paragraph */
+}
+
+blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555; /* Lighter text for subtlety */
+    border-left: 4px solid #ccc; /* Adds a decorative left border */
+    margin: 20px 0; /* Spacing around the quote */
+    padding-left: 15px; /* Indentation for the text */
 }
