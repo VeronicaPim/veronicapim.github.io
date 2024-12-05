@@ -149,12 +149,17 @@ footer {
 }
 
 .news-section {
-    width: 100%;
+    width: 100%; /* Ensures the box spans full width */
+    max-width: 800px; /* Adjust if needed for layout */
     background-color: #f9f9f9; /* Light background for news section */
-    padding: 20px;
-    margin-top: 20px;
+    padding: 30px; /* Add more padding to create space */
+    margin-top: 20px; /* Ensure spacing above */
+    margin-bottom: 20px; /* Add spacing below to prevent cutoff */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    border-radius: 8px; /* Rounded corners for polish */
+    overflow: visible; /* Ensures content inside isn’t cut off */
 }
+
 
 .news-item {
     background-color: white; /* White background for each item */
