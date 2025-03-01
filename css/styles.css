@@ -21,6 +21,24 @@ header {
     padding: 0.5em 0;
     border-bottom: 1px solid #eaeaea;
 }
+.medium-blog-button {
+    background-color: #000; /* Medium's signature black */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+    display: block;
+    margin: 10px auto; /* Centers the button */
+}
+
+.medium-blog-button:hover {
+    background-color: #444; /* Slightly lighter black on hover */
+}
+
 
 nav {
     display: flex;
