@@ -151,6 +151,14 @@ nav a, #welcome a {
     width: 20%;
 }
 
+.mission-bubble {
+    background-color: #e0f7fa; /* A light blue color */
+    border-left: 5px solid #00acc1; /* A darker blue for emphasis */
+    padding: 20px;
+    border-radius: 8px; /* This makes the corners rounded */
+    margin: 20px 0; /* Adds some space above and below the bubble */
+}
+
 .download-cv {
     background-color: #4CAF50; /* Green */
     color: white;
